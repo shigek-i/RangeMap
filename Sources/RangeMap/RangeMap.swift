@@ -68,6 +68,10 @@ public class RangeMap: UIView {
         
         NSLayoutConstraint.activate(constraints)
     }
+    
+    public override func layoutSubviews() {
+        updateCircle()
+    }
 }
 
 private extension RangeMap {
